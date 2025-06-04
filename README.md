@@ -1,4 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tarambana UI
+
+This project is a modern [Next.js](https://nextjs.org) app bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), using [Tailwind CSS v4](https://tailwindcss.com/blog/tailwindcss-v4#css-first-configuration) with the new zero-config, CSS-first approach.
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org) (App Router, TypeScript)
+- [Tailwind CSS v4](https://tailwindcss.com/blog/tailwindcss-v4#css-first-configuration) (CSS-first configuration)
+
+## Tailwind CSS v4 Setup
+
+This project uses Tailwind CSS v4 with the new zero-configuration, CSS-first setup:
+
+- No `tailwind.config.js/ts` file is required for basic usage.
+- Tailwind is enabled by adding `@import "tailwindcss";` to `src/app/globals.css`.
+- The PostCSS config (`postcss.config.mjs`) includes the `@tailwindcss/postcss` plugin.
+- You can start using Tailwind utility classes in your components immediately.
+
+For more details, see the [Tailwind CSS v4.0 Blog](https://tailwindcss.com/blog/tailwindcss-v4#css-first-configuration).
 
 ## Getting Started
 
