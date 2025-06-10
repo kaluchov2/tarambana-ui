@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CallToActionButton from "./CallToActionButton";
+import DynamicStarScene from "./DynamicStarScene";
 
 const HeroSection: React.FC = () => {
   return (
@@ -14,6 +15,10 @@ const HeroSection: React.FC = () => {
         </p>
         <CallToActionButton href="#shop">Shop Now</CallToActionButton>
       </div>
+
+      {/* Three.js Star Scene */}
+      <DynamicStarScene />
+
       <div className="w-full flex justify-center">
         <Image
           src="/placeholder-hero.jpg"
