@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CallToActionButton from "./CallToActionButton";
-import DynamicStarScene from "./DynamicStarScene";
+import DynamicStarScene from "./three/DynamicStarScene";
 
 const HeroSection: React.FC = () => {
   return (

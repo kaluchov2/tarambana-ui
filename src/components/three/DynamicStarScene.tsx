@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import LoadingAnimation from "./LoadingAnimation";
+import LoadingAnimation from "../LoadingAnimation";
 
 // Dynamically import the Three.js scene to prevent blocking initial page load
 const ThreeJsStarScene = dynamic(() => import("./ThreeJsStarScene"), {

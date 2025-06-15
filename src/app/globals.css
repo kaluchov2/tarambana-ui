@@ -24,3 +24,50 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom inverse cursor */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+/* Inverse text selection */
+::selection {
+  background-color: #ffffff;
+  color: #0a0a0a;
+}
+
+/* Click animation */
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cursor-click {
+  animation: click 0.3s ease-in-out;
+}
+
+@keyframes splash-fade {
+  to {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.splash-fade {
+  animation: splash-fade 1s 2s forwards;
+}

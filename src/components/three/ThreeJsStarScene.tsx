@@ -2,10 +2,10 @@
 
 import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
-import LoadingAnimation from "./LoadingAnimation";
+import LoadingAnimation from "../LoadingAnimation";
 
 // Dynamically import StarLogo for client-side rendering
-const StarLogo = dynamic(() => import("./three/StarLogo"), {
+const StarLogo = dynamic(() => import("./StarLogo"), {
   ssr: false,
   loading: () => <LoadingAnimation />,
 });
